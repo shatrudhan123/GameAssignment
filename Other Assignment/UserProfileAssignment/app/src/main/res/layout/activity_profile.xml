@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.Profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F7FB">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/bg_profile_header">
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/bg_circle_white"
+                    android:padding="4dp"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tester"
+                    android:textSize="20sp"
+                    android:textColor="@color/testing_color"
+                    android:textStyle="bold"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dev"
+                    android:textColor="#7A7A7A"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Immortal Technologies"
+                    android:layout_marginTop="6dp"
+                    android:layout_gravity="center" />
+
+                <!-- FOLLOWERS -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_followers"
+                        android:text="220 Followers"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_following"
+                        android:text="150 Following"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <!-- SOCIAL ICONS -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_website"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/img_web"
+                        app:tint="#9D9D9D"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_margin="8dp"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/testing_color"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/iv_instagram"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/instagram"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_margin="8dp"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardBackgroundColor="@color/testing_color"
+
+                        />
+                    <ImageView
+                        android:id="@+id/iv_facebook"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/facebook"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_margin="8dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
